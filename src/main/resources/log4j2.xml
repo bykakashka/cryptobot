@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" shutdownHook="disable">
+    <Appenders>
+        <Console name="StandardOut" target="SYSTEM_OUT">
+            <PatternLayout pattern="%date %5level [%t] %c{1}: %msg{nolookups}%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="by.byka.traiding" level="DEBUG"/>
+        <Logger name="by.byka.traiding.simulator" level="DEBUG"/>
+        <Root level="INFO">
+            <AppenderRef ref="StandardOut"/>
+        </Root>
+    </Loggers>
+</Configuration>
